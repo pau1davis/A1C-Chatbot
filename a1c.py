@@ -9,7 +9,7 @@ import requests
 def load_llm():
     llm=ChatOpenAI(temperature=.9,openai_api_key='', model="gpt-3.5-turbo-0613",verbose=True)
     return llm
-#
+#API key is hard coded so put your own or use environment
 llm = ChatOpenAI(temperature=0,openai_api_key='', model="gpt-3.5-turbo-0613", request_timeout=120,verbose=True)
 
 slit.set_page_config(page_title="A1C Order Generator", page_icon=":robot:")
